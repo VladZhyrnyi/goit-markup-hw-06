@@ -438,6 +438,12 @@ a {
   display: block;
   height: 18px;
   width: 18px;
+  fill: currentColor;
+}
+
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+  color: var(--accent-text-color)
 }
 
 .userdata-form-title {
@@ -461,9 +467,6 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-}
-
-.field-input {
   margin-bottom: 10px;
 }
 
@@ -513,11 +516,13 @@ a {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.field-input .field:focus {
+.field-input .field:focus,
+.field-input .field:hover {
   border-color: var(--accent-text-color);
 }
 
-.field-input .field:focus + .icon {
+.field-input .field:focus + .icon,
+.field-input .field:hover + .icon {
   fill: var(--accent-text-color);
 }
 
